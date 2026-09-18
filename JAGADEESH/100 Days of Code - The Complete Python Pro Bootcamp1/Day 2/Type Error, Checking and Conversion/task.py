@@ -1,0 +1,6 @@
+x = len(str("12345"))
+print(x)
+print(type(x))
+print(type(str(x)))
+print(type(float(x)))
+print(type(bool(x)))

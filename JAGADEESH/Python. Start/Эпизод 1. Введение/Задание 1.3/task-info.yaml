@@ -1,0 +1,77 @@
+type: edu
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 30
+        length: 6
+        placeholder_text: "# TODO"
+        initial_state:
+          length: 6
+          offset: 30
+        initialized_from_dependency: false
+        encrypted_possible_answer: PXNohf98r8baGAWz0WMPaw==
+        selected: false
+        status: Unchecked
+      - offset: 83
+        length: 6
+        placeholder_text: "# TODO"
+        initial_state:
+          length: 6
+          offset: 83
+        initialized_from_dependency: false
+        encrypted_possible_answer: PXNohf98r8baGAWz0WMPaw==
+        selected: false
+        status: Unchecked
+      - offset: 133
+        length: 6
+        placeholder_text: "# TODO"
+        initial_state:
+          length: 6
+          offset: 133
+        initialized_from_dependency: false
+        encrypted_possible_answer: PXNohf98r8baGAWz0WMPaw==
+        selected: false
+        status: Unchecked
+      - offset: 186
+        length: 6
+        placeholder_text: "# TODO"
+        initial_state:
+          length: 6
+          offset: 186
+        initialized_from_dependency: false
+        encrypted_possible_answer: PXNohf98r8baGAWz0WMPaw==
+        selected: false
+        status: Unchecked
+      - offset: 239
+        length: 6
+        placeholder_text: "# TODO"
+        initial_state:
+          length: 6
+          offset: 239
+        initialized_from_dependency: false
+        encrypted_possible_answer: PXNohf98r8baGAWz0WMPaw==
+        selected: false
+        status: Unchecked
+      - offset: 289
+        length: 6
+        placeholder_text: "# TODO"
+        initial_state:
+          length: 6
+          offset: 289
+        initialized_from_dependency: false
+        encrypted_possible_answer: PXNohf98r8baGAWz0WMPaw==
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

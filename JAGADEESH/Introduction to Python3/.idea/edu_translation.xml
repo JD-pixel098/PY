@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TranslationProjectSettings">
+    <option name="structureTranslation">
+      <map>
+        <entry key="Spanish">
+          <value>
+            <map>
+              <entry key="1052019043" value="Ejecutar módulos como scripts  " />
+              <entry key="13416" value="Introducción  " />
+              <entry key="13417" value="Variables  " />
+              <entry key="13419" value="Cadenas  " />
+              <entry key="13420" value="Estructuras de datos  " />
+              <entry key="13422" value="Expresiones condicionales  " />
+              <entry key="13423" value="Bucles  " />
+              <entry key="13424" value="Funciones  " />
+              <entry key="13425" value="Clases y objetos  " />
+              <entry key="13427" value="Módulos y paquetes  " />
+              <entry key="13428" value="Entrada/salida de archivos" />
+              <entry key="135577691" value="Corregir ejecución infinita" />
+              <entry key="1359580422" value="Abrir archivo  " />
+              <entry key="1396640314" value="Importar módulo parte 2  " />
+              <entry key="1434231638" value="Docstrings" />
+              <entry key="1437026389" value="Acerca de" />
+              <entry key="1512947900" value="Descripción de la tarea" />
+              <entry key="1569744377" value="Leer todas las líneas  " />
+              <entry key="1619083194" value="Bucle for anidado" />
+              <entry key="1763985182" value="Indentación" />
+              <entry key="186010" value="Nuestro primer programa" />
+              <entry key="186011" value="Comentarios" />
+              <entry key="186012" value="Definición de variable" />
+              <entry key="186013" value="Variable no definida" />
+              <entry key="186014" value="Tipos de variables" />
+              <entry key="186015" value="Conversión de tipos" />
+              <entry key="186016" value="Operadores aritméticos" />
+              <entry key="186017" value="Asignaciones" />
+              <entry key="186018" value="Operadores booleanos" />
+              <entry key="186019" value="Operadores de comparación" />
+              <entry key="186020" value="Concatenación" />
+              <entry key="186021" value="Multiplicación de cadenas" />
+              <entry key="186022" value="Indexación de cadenas" />
+              <entry key="186023" value="Indexación negativa de cadenas" />
+              <entry key="186024" value="Segmentación de cadenas" />
+              <entry key="186025" value="Operador in" />
+              <entry key="186026" value="Longitud de la cadena" />
+              <entry key="186027" value="Escape de caracteres" />
+              <entry key="186028" value="Métodos básicos de cadenas" />
+              <entry key="186029" value="Formateo de cadenas" />
+              <entry key="186030" value="Introducción a listas" />
+              <entry key="186031" value="Operaciones con listas" />
+              <entry key="186032" value="Elementos de lista" />
+              <entry key="186033" value="Tuplas" />
+              <entry key="186034" value="Diccionarios" />
+              <entry key="186035" value="Llaves() y valores() de diccionario" />
+              <entry key="186036" value="Palabra clave in" />
+              <entry key="186037" value="Operadores booleanos" />
+              <entry key="186038" value="Orden de operadores booleanos" />
+              <entry key="186039" value="Sentencia if" />
+              <entry key="186040" value="Partes else y elif en la sentencia if" />
+              <entry key="186041" value="Bucle for" />
+              <entry key="186042" value="Recorrer una cadena" />
+              <entry key="186043" value="Bucle while" />
+              <entry key="186044" value="Palabra clave break" />
+              <entry key="186045" value="Palabra clave continue" />
+              <entry key="186046" value="Definición" />
+              <entry key="186047" value="Parámetros y argumentos en la llamada" />
+              <entry key="186048" value="Valor de retorno" />
+              <entry key="186049" value="Parámetros por defecto" />
+              <entry key="186050" value="Definición  " />
+              <entry key="186051" value="Acceso a variable  " />
+              <entry key="186052" value="Actualizar variable  " />
+              <entry key="186053" value="El parámetro self  " />
+              <entry key="186054" value="Método especial __init__  " />
+              <entry key="186055" value="Importar módulo  " />
+              <entry key="186056" value="Módulos integrados  " />
+              <entry key="186057" value="Importar desde  " />
+              <entry key="186058" value="Leer archivo  " />
+              <entry key="186059" value="Escribir en archivo  " />
+              <entry key="1891339475" value="Else con bucles 2" />
+              <entry key="1915237515" value="Else con bucles" />
+              <entry key="1916682617" value="Listas anidadas" />
+              <entry key="1943683491" value="Variables de clase e instancia  " />
+              <entry key="2045964733" value="Args y kwargs  " />
+              <entry key="382196872" value="Variables de clase e instancia 2  " />
+              <entry key="417821566" value="Conociéndote" />
+              <entry key="457025947" value="Argumentos de palabra clave  " />
+              <entry key="491469180" value="Paquetes  " />
+              <entry key="544073308" value="Comprensión de listas anidadas" />
+              <entry key="550150392" value="Navegación" />
+              <entry key="551046839" value="Comprensión de listas" />
+              <entry key="615106464" value="Llamar un método desde otro método  " />
+              <entry key="625444905" value="Agregar elementos de listas" />
+              <entry key="719264027" value="Método join" />
+              <entry key="725820398" value="Sentencia if-else en una sola línea" />
+              <entry key="798324321" value="¿Qué sigue?" />
+              <entry key="838741241" value="F-strings" />
+              <entry key="891798445" value="Editor" />
+              <entry key="89997794" value="__str__ vs __repr__  " />
+              <entry key="920823769" value="Recursión  " />
+              <entry key="925039926" value="Orden de argumentos  " />
+              <entry key="958245751" value="Llaves de diccionario" />
+              <entry key="986155019" value="Vista del curso" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="translationVersions">
+      <map>
+        <entry key="Spanish" value="2697" />
+      </map>
+    </option>
+  </component>
+</project>
