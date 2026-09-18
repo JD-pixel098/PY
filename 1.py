@@ -1,178 +1,280 @@
-import pygame
-import time
-import random
-
-snake_speed = 15
-
-# Window size
-window_x = 720
-window_y = 480
-
-# defining colors
-black = pygame.Color(0, 0, 0)
-white = pygame.Color(255, 255, 255)
-red = pygame.Color(255, 0, 0)
-green = pygame.Color(0, 255, 0)
-blue = pygame.Color(0, 0, 255)
-
-# Initialising pygame
-pygame.init()
-
-# Initialise game window
-pygame.display.set_caption('GeeksforGeeks Snakes')
-game_window = pygame.display.set_mode((window_x, window_y))
-
-# FPS (frames per second) controller
-fps = pygame.time.Clock()
-
-# defining snake default position
-snake_position = [100, 50]
-
-# defining first 4 blocks of snake body
-snake_body = [[100, 50],
-              [90, 50],
-              [80, 50],
-              [70, 50]
-              ]
-# fruit position
-fruit_position = [random.randrange(1, (window_x // 10)) * 10,
-                  random.randrange(1, (window_y // 10)) * 10]
-
-fruit_spawn = True
-
-# setting default snake direction towards
-# right
-direction = 'RIGHT'
-change_to = direction
-
-# initial score
-score = 0
 
 
-# displaying Score function
-def show_score(choice, color, font, size):
-    # creating font object score_font
-    score_font = pygame.font.SysFont(font, size)
-
-    # create the display surface object
-    # score_surface
-    score_surface = score_font.render('Score : ' + str(score), True, color)
-
-    # create a rectangular object for the text
-    # surface object
-    score_rect = score_surface.get_rect()
-
-    # displaying text
-    game_window.blit(score_surface, score_rect)
-
-
-# game over function
-def game_over():
-    # creating font object my_font
-    my_font = pygame.font.SysFont('times new roman', 50)
-
-    # creating a text surface on which text
-    # will be drawn
-    game_over_surface = my_font.render(
-        'Your Score is : ' + str(score), True, red)
-
-    # create a rectangular object for the text
-    # surface object
-    game_over_rect = game_over_surface.get_rect()
-
-    # setting position of the text
-    game_over_rect.midtop = (window_x / 2, window_y / 4)
-
-    # blit will draw the text on screen
-    game_window.blit(game_over_surface, game_over_rect)
-    pygame.display.flip()
-
-    # after 2 seconds we will quit the program
-    time.sleep(2)
-
-    # deactivating pygame library
-    pygame.quit()
-
-    # quit the program
-    quit()
+# import tkinter as tk
+#
+# from PIL import Image
+# import os
+#
+# kd = Image.open(r"C:/Users/SIC/Desktop/neww/photo.png")
+# kd_root = tk.Tk()
+#
+#
+# import label
+#
+# kd_root = tk.Tk()                                    #2
+#
+# kd_root.geometry("300x500")
+#
+# kd = ImageTk.PhotoImage(kd)
+#
+# label = Label(root,image = kd)
+# label.pack
+#
+#
+#
+#
+# kd_root.minsize(100, 100)
+#
+# kd_root.maxsize(800, 700)
+#
+# label = tk.Label( text="Opening with 250 discount")
+# label.pack()
+#
+# kd_root.mainloop()                                      #3
 
 
-# Main Function
-while True:
+# import tkinter as tk
 
-    # handling key events
-    for event in pygame.event.get():
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_UP:
-                change_to = 'UP'
-            if event.key == pygame.K_DOWN:
-                change_to = 'DOWN'
-            if event.key == pygame.K_LEFT:
-                change_to = 'LEFT'
-            if event.key == pygame.K_RIGHT:
-                change_to = 'RIGHT'
 
-    # If two keys pressed simultaneously
-    # we don't want snake to move into two
-    # directions simultaneously
-    if change_to == 'UP' and direction != 'DOWN':
-        direction = 'UP'
-    if change_to == 'DOWN' and direction != 'UP':
-        direction = 'DOWN'
-    if change_to == 'LEFT' and direction != 'RIGHT':
-        direction = 'LEFT'
-    if change_to == 'RIGHT' and direction != 'LEFT':
-        direction = 'RIGHT'
 
-    # Moving the snake
-    if direction == 'UP':
-        snake_position[1] -= 10
-    if direction == 'DOWN':
-        snake_position[1] += 10
-    if direction == 'LEFT':
-        snake_position[0] -= 10
-    if direction == 'RIGHT':
-        snake_position[0] += 10
+# import tkinter as tk
+# import label
+# prasad_root = tk.Tk()
+# prasad_root.title("welcome to pycharm")   #prasad _root.title("welcome to the party")
+# prasad_root.geometry("733x434")            # prasad_root.minsiz
+# prasad_root.minsize(733,434)
+# prasad_root.maxsize(933,634)
+# label= tk.Label(text="welcome to pycharm")
+# label.pack()
+# prasad_root.mainloop()
 
-    # Snake body growing mechanism
-    # if fruits and snakes collide then scores
-    # will be incremented by 10
-    snake_body.insert(0, list(snake_position))
-    if snake_position[0] == fruit_position[0] and snake_position[1] == fruit_position[1]:
-        score += 10
-        fruit_spawn = False
-    else:
-        snake_body.pop()
+# import tkinter as tk
+# from socket import SocketIO
+#
+# from PIL import Image, ImageTk
+# root = tk.Tk()
+# root.title("jai kisan image")
+# img = Image.open(r"C:\Users\SIC\Documents\GitHub\PY\JAGADEESH\MY_PROJECRS\image.png")
+# photo = ImageTk.PhotoImage(img)
+#
+# # Show image in a label
+# label = tk.Label(root, image=photo)
+# label.pack()
+#
+# root.mainloop()
 
-    if not fruit_spawn:
-        fruit_position = [random.randrange(1, (window_x // 10)) * 10,
-                          random.randrange(1, (window_y // 10)) * 10]
 
-    fruit_spawn = True
-    game_window.fill(black)
+# import tkinler as tk
+# from PIL import Image, ImageTk
+#
+# root = tk.Tk()
+# root.geometry("300x300")
+# root.resizable(width = False,height= False)
+#
+# main_frame = tk.Frame(root,bg = "white")
+#
+# image.obj = ImageTk.PhotoImage(Image.open("image.png"))
 
-    for pos in snake_body:
-        pygame.draw.rect(game_window, green,
-                         pygame.Rect(pos[0], pos[1], 10, 10))
-    pygame.draw.rect(game_window, white, pygame.Rect(
-        fruit_position[0], fruit_position[1], 10, 10))
 
-    # Game Over conditions
-    if snake_position[0] < 0 or snake_position[0] > window_x - 10:
-        game_over()
-    if snake_position[1] < 0 or snake_position[1] > window_y - 10:
-        game_over()
 
-    # Touching the snake body
-    for block in snake_body[1:]:
-        if snake_position[0] == block[0] and snake_position[1] == block[1]:
-            game_over()
+# import tkinter as tk
+# windows = tk()
+# window.title("dragon booster")
+# canvas = Canvas(window,width = 300,height = 300)
+# canvas.pack()
+# self_image =photoImage(file = "C:\\Users\\SIC\\Documents\\GitHub\\PY\\JAGADEESH\\25265.png")
+# canvas.create_image(0,0,image=self_image, anchor="nw")
+#
 
-    # displaying score continuously
-    show_score(1, white, 'times new roman', 20)
+# import tkinter as tk
+# from tkinter import messagebox
+#
+# root = tk.Tk()
+# root.title("cheat codes for CGI🚁🚁")
+# root.geometry("300x250")
 
-    # Refresh game screen
-    pygame.display.update()
+# label = tk.Label(root,text = "nutter tools")
+# label.pack(padx=0,pady=20)
+#
+# type_entry = tk.Entry(root,font = ("thug tools",7))
+# type_entry.pack(pady=5)
+# usage_entry = tk.Entry(root,font = ("infinity weapons",10))
+# usage_entry.pack(pady=5)
 
-    # Frame Per Second /Refresh Rate
-    fps.tick(snake_speed)
+
+
+
+
+# name_entry = tk.Entry(root, font=("Comic Sans MS", 12))
+# name_entry.pack(pady=5)
+#
+# age_entry = tk.Entry(root, font=("Comic Sans MS", 12))
+# age_entry.pack(pady=5)
+
+
+
+# root.mainloop()
+
+# Language: Python
+import tkinter as tk
+from tkinter import colorchooser
+
+def choose_color():
+    color = colorchooser.askcolor()[1]
+    if color:
+        canvas.config(bg=color)
+
+root = tk.Tk()
+root.title("Kids Coloring App")
+
+canvas = tk.Canvas(root, width=400, height=300, bg='white')
+canvas.pack()
+
+color_button = tk.Button(root, text="Pick a Color", command=choose_color)
+color_button.pack(pady=10)
+
+root.mainloop()
+
+
+
+
+
+
+# import tkinter as tk
+#
+# from PIL import Image
+# import os
+#
+# kd = Image.open(r"C:/Users/SIC/Desktop/neww/photo.png")
+# kd_root = tk.Tk()
+#
+#
+# import label
+#
+# kd_root = tk.Tk()                                    #2
+#
+# kd_root.geometry("300x500")
+#
+# kd = ImageTk.PhotoImage(kd)
+#
+# label = Label(root,image = kd)
+# label.pack
+#
+#
+#
+#
+# kd_root.minsize(100, 100)
+#
+# kd_root.maxsize(800, 700)
+#
+# label = tk.Label( text="Opening with 250 discount")
+# label.pack()
+#
+# kd_root.mainloop()                                      #3
+
+
+# import tkinter as tk
+
+
+
+# import tkinter as tk
+# import label
+# prasad_root = tk.Tk()
+# prasad_root.title("welcome to pycharm")   #prasad _root.title("welcome to the party")
+# prasad_root.geometry("733x434")            # prasad_root.minsiz
+# prasad_root.minsize(733,434)
+# prasad_root.maxsize(933,634)
+# label= tk.Label(text="welcome to pycharm")
+# label.pack()
+# prasad_root.mainloop()
+
+# import tkinter as tk
+# from socket import SocketIO
+#
+# from PIL import Image, ImageTk
+# root = tk.Tk()
+# root.title("jai kisan image")
+# img = Image.open(r"C:\Users\SIC\Documents\GitHub\PY\JAGADEESH\MY_PROJECRS\image.png")
+# photo = ImageTk.PhotoImage(img)
+#
+# # Show image in a label
+# label = tk.Label(root, image=photo)
+# label.pack()
+#
+# root.mainloop()
+
+
+# import tkinler as tk
+# from PIL import Image, ImageTk
+#
+# root = tk.Tk()
+# root.geometry("300x300")
+# root.resizable(width = False,height= False)
+#
+# main_frame = tk.Frame(root,bg = "white")
+#
+# image.obj = ImageTk.PhotoImage(Image.open("image.png"))
+
+
+
+# import tkinter as tk
+# windows = tk()
+# window.title("dragon booster")
+# canvas = Canvas(window,width = 300,height = 300)
+# canvas.pack()
+# self_image =photoImage(file = "C:\\Users\\SIC\\Documents\\GitHub\\PY\\JAGADEESH\\25265.png")
+# canvas.create_image(0,0,image=self_image, anchor="nw")
+#
+
+# import tkinter as tk
+# from tkinter import messagebox
+#
+# root = tk.Tk()
+# root.title("cheat codes for CGI🚁🚁")
+# root.geometry("300x250")
+
+# label = tk.Label(root,text = "nutter tools")
+# label.pack(padx=0,pady=20)
+#
+# type_entry = tk.Entry(root,font = ("thug tools",7))
+# type_entry.pack(pady=5)
+# usage_entry = tk.Entry(root,font = ("infinity weapons",10))
+# usage_entry.pack(pady=5)
+
+
+
+
+
+# name_entry = tk.Entry(root, font=("Comic Sans MS", 12))
+# name_entry.pack(pady=5)
+#
+# age_entry = tk.Entry(root, font=("Comic Sans MS", 12))
+# age_entry.pack(pady=5)
+
+
+
+# root.mainloop()
+
+# Language: Python
+import tkinter as tk
+from tkinter import colorchooser
+
+def choose_color():
+    color = colorchooser.askcolor()[1]
+    if color:
+        canvas.config(bg=color)
+
+root = tk.Tk()
+root.title("Kids Coloring App")
+
+canvas = tk.Canvas(root, width=400, height=300, bg='white')
+canvas.pack()
+
+color_button = tk.Button(root, text="Pick a Color", command=choose_color)
+color_button.pack(pady=10)
+
+root.mainloop()
+
+
+
+
